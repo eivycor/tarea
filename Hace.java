@@ -6,17 +6,21 @@ public class Hace {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int num, x, suma;
+		int edad, n, suma,i;
+		double prom;
 		Scanner scan = new Scanner(System.in);
-		System.out.println("ingresa cantidad de numeros");
-		x = scan.nextInt();
+		System.out.println("ingresa cantidad de alumnos");
+		n= scan.nextInt();
 		suma = 0;
+		i=1;
 		do {
-			System.out.println("ingrese numero");
-			num = scan.nextInt();
-			suma = suma + num;
-		} while (num != x);
-		System.out.println(suma);
+			System.out.println("ingrese edad");
+			edad = scan.nextInt();
+			suma = suma + edad;
+			i++;
+		} while (i<= n);
+		prom=suma/n;
+		System.out.println(prom);
 
 	}
 }
