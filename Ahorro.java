@@ -15,6 +15,8 @@ ah=0;
 		System.out.println("ingresa cantidad de ahorro");
 		cant=scan.nextDouble();
 		ah=ah+cant;
+		System.out.println("ahorro del mes es "+mes+" :"+ cant);
+		System.out.println("ingrese  cantidad:");
 	}
 	while(mes<=12);
 	System.out.println("lo ahorrado en un año es :"+ ah );
